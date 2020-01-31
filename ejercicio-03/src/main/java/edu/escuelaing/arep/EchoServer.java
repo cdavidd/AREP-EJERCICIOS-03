@@ -32,7 +32,7 @@ public class EchoServer {
         String inputLine, outputLine;
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Mensaje:" + inputLine);
-            outputLine = "Respuesta " + (Double.parseDouble(inputLine) * Double.parseDouble(inputLine));
+            outputLine = "Respuesta n al cuadrado: " + (Double.parseDouble(inputLine) * Double.parseDouble(inputLine));
             out.println(outputLine);
             if (outputLine.equals("Respuestas: Bye."))
                 break;
